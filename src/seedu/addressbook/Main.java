@@ -20,8 +20,12 @@ public class Main extends Application implements Stoppable{
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        gui = new Gui(new Logic(), VERSION);
-        gui.start(primaryStage, this);
+        try {
+        	gui = new Gui(new Logic(), VERSION);
+            gui.start(primaryStage, this);
+        } catch (Exception e){
+        	System.out.println(e.getMessage());
+        }
     }
 
     @Override
