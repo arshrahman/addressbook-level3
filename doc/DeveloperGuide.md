@@ -47,7 +47,9 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
-
+`*` | user| see suggestions as I type in the textbox | perform functions faster
+`*` | user| have auto-correct feature for the textbox | be more productive
+`*` | user| see all my contacts straightaway| find a person faster
 
 ## Appendix B : Use Cases
 
@@ -74,12 +76,36 @@ Use case ends.
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
 
+#### Use case: Rename tag
+
+**MSS**
+
+1. User requests to rename a specific tag with a new name
+2. AddressBook asks for confirmation to rename the tag
+3. User provides affirmation
+4. AddressBook renames the tag with the new name and lists all the affected persons
+Use case ends.
+
+**Extensions**
+
+1a. No such tag found with the specified name
+
+> Use case ends
+
+3a. user aborts the task
+
+> Use case ends
+
+
 ## Appendix C : Non Functional Requirements
 
 1. Should work on any [mainstream OS](#mainstream-os) as long as it has Java 8 or higher installed.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
+5. Should run on mobile devices that support Java 8.
+6. Should come with proper documentation and support page.
+7. Should be able to run without inputs from mouse.
 
 ## Appendix D : Glossary
 
