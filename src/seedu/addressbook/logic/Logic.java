@@ -51,7 +51,7 @@ public class Logic {
         return new StorageFile();
     }
 
-    public String getStoragePath() {
+    public String getStorageFilePath() {
         return storage.getPath();
     }
 
